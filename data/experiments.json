@@ -1,0 +1,463 @@
+{
+  "version": "2026-11-07-gallery-v1",
+  "recordings": 10,
+  "observedFrames": 15,
+  "observedLastTimeSeconds": 0.4666666666666667,
+  "futureFrames": 30,
+  "seeds": [
+    261107211,
+    261107223,
+    261107227
+  ],
+  "evaluationsPerSeed": 8185,
+  "surfacePoints": 256,
+  "summary": [
+    {
+      "object": "mustard",
+      "mode": "retain",
+      "clips": 5,
+      "add_mm": 76.19753489658615,
+      "center_mm": 73.01251438181377,
+      "rotation_deg": 31.59478189348174,
+      "prefix_rmse_mm": 7.091353212540601,
+      "regressions_over_5mm": 0,
+      "worst_regression_mm": 0.0
+    },
+    {
+      "object": "mustard",
+      "mode": "isotropic",
+      "clips": 5,
+      "add_mm": 67.88863087537435,
+      "center_mm": 65.15508800668513,
+      "rotation_deg": 47.59911079991281,
+      "prefix_rmse_mm": 4.03708487051563,
+      "regressions_over_5mm": 1,
+      "worst_regression_mm": 99.56666506468326
+    },
+    {
+      "object": "mustard",
+      "mode": "joint",
+      "clips": 5,
+      "add_mm": 104.33427436639991,
+      "center_mm": 102.60726881047512,
+      "rotation_deg": 47.00032947721684,
+      "prefix_rmse_mm": 3.2630929399425477,
+      "regressions_over_5mm": 3,
+      "worst_regression_mm": 149.51054496955277
+    },
+    {
+      "object": "mustard",
+      "mode": "full_joint",
+      "clips": 5,
+      "add_mm": 108.33723912904273,
+      "center_mm": 106.42569973523408,
+      "rotation_deg": 48.938764021240864,
+      "prefix_rmse_mm": 2.117529785339684,
+      "regressions_over_5mm": 3,
+      "worst_regression_mm": 129.06995556976543
+    },
+    {
+      "object": "cleanser",
+      "mode": "retain",
+      "clips": 5,
+      "add_mm": 65.28716288714732,
+      "center_mm": 60.56339385608898,
+      "rotation_deg": 25.221912129024336,
+      "prefix_rmse_mm": 8.353225375980696,
+      "regressions_over_5mm": 0,
+      "worst_regression_mm": 0.0
+    },
+    {
+      "object": "cleanser",
+      "mode": "isotropic",
+      "clips": 5,
+      "add_mm": 53.135902907198364,
+      "center_mm": 48.37986466447116,
+      "rotation_deg": 42.252583432983165,
+      "prefix_rmse_mm": 6.084548960057583,
+      "regressions_over_5mm": 1,
+      "worst_regression_mm": 47.25904940903972
+    },
+    {
+      "object": "cleanser",
+      "mode": "joint",
+      "clips": 5,
+      "add_mm": 85.50605542580584,
+      "center_mm": 81.70240114087427,
+      "rotation_deg": 46.78136449180672,
+      "prefix_rmse_mm": 5.053138232208088,
+      "regressions_over_5mm": 4,
+      "worst_regression_mm": 58.26686319801249
+    },
+    {
+      "object": "cleanser",
+      "mode": "full_joint",
+      "clips": 5,
+      "add_mm": 67.23323038518765,
+      "center_mm": 60.14510896635399,
+      "rotation_deg": 52.624480233154124,
+      "prefix_rmse_mm": 4.1177324044541,
+      "regressions_over_5mm": 2,
+      "worst_regression_mm": 42.878179393734115
+    }
+  ],
+  "cases": [
+    {
+      "id": "000001",
+      "object": "mustard",
+      "number": "001",
+      "forecast": "assets/videos/mustard-001-forecast.mp4",
+      "poster": "assets/posters/mustard-001-forecast.webp",
+      "thumb": "assets/posters/mustard-001-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 109.6551412253294,
+          "center_mm": 107.14739977274752,
+          "rotation_deg": 79.79021300534552,
+          "prefix_rmse_mm": 1.498314237444204
+        },
+        "isotropic": {
+          "add_mm": 78.39860104774456,
+          "center_mm": 74.83155832388536,
+          "rotation_deg": 85.47207525067658,
+          "prefix_rmse_mm": 3.4671753270112586
+        },
+        "joint": {
+          "add_mm": 97.70123947301543,
+          "center_mm": 95.40527433352061,
+          "rotation_deg": 73.22446581630342,
+          "prefix_rmse_mm": 1.8800792594657976
+        },
+        "retain": {
+          "add_mm": 110.79239020002942,
+          "center_mm": 100.58962404922384,
+          "rotation_deg": 58.77906056177191,
+          "prefix_rmse_mm": 7.3996556413549355
+        }
+      }
+    },
+    {
+      "id": "000002",
+      "object": "cleanser",
+      "number": "002",
+      "forecast": "assets/videos/cleanser-002-forecast.mp4",
+      "poster": "assets/posters/cleanser-002-forecast.webp",
+      "thumb": "assets/posters/cleanser-002-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 54.7040431990219,
+          "center_mm": 54.92468212030716,
+          "rotation_deg": 7.775231013344881,
+          "prefix_rmse_mm": 1.6357680778953043
+        },
+        "isotropic": {
+          "add_mm": 37.76822029275014,
+          "center_mm": 36.225811231786764,
+          "rotation_deg": 31.631007546974505,
+          "prefix_rmse_mm": 2.49165189415412
+        },
+        "joint": {
+          "add_mm": 58.015717899958624,
+          "center_mm": 58.47846510627239,
+          "rotation_deg": 13.390147266294466,
+          "prefix_rmse_mm": 2.1684817981930418
+        },
+        "retain": {
+          "add_mm": 68.40985377271063,
+          "center_mm": 66.23337352120532,
+          "rotation_deg": 21.518535516314305,
+          "prefix_rmse_mm": 6.560589316037395
+        }
+      }
+    },
+    {
+      "id": "000006",
+      "object": "mustard",
+      "number": "006",
+      "forecast": "assets/videos/mustard-006-forecast.mp4",
+      "poster": "assets/posters/mustard-006-forecast.webp",
+      "thumb": "assets/posters/mustard-006-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 84.64612467493407,
+          "center_mm": 84.42059511301937,
+          "rotation_deg": 15.846895611844067,
+          "prefix_rmse_mm": 1.512602502051286
+        },
+        "isotropic": {
+          "add_mm": 30.010947216003313,
+          "center_mm": 28.76352212780015,
+          "rotation_deg": 15.456253070162095,
+          "prefix_rmse_mm": 3.8117236481868115
+        },
+        "joint": {
+          "add_mm": 85.16585135334306,
+          "center_mm": 85.06344130596453,
+          "rotation_deg": 8.609706263417516,
+          "prefix_rmse_mm": 3.590823344036683
+        },
+        "retain": {
+          "add_mm": 66.01882069983563,
+          "center_mm": 66.07339465407274,
+          "rotation_deg": 4.532594591536403,
+          "prefix_rmse_mm": 6.4222699929897775
+        }
+      }
+    },
+    {
+      "id": "000007",
+      "object": "cleanser",
+      "number": "007",
+      "forecast": "assets/videos/cleanser-007-forecast.mp4",
+      "poster": "assets/posters/cleanser-007-forecast.webp",
+      "thumb": "assets/posters/cleanser-007-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 83.77506035477961,
+          "center_mm": 74.1619847203364,
+          "rotation_deg": 83.56828745650249,
+          "prefix_rmse_mm": 2.1848711518179735
+        },
+        "isotropic": {
+          "add_mm": 66.33884426606703,
+          "center_mm": 56.117841088403665,
+          "rotation_deg": 61.983172804297006,
+          "prefix_rmse_mm": 4.086166232466132
+        },
+        "joint": {
+          "add_mm": 110.70898961262691,
+          "center_mm": 102.42400031428154,
+          "rotation_deg": 78.77638778034333,
+          "prefix_rmse_mm": 3.0934880693993834
+        },
+        "retain": {
+          "add_mm": 76.46161651409165,
+          "center_mm": 76.07713612888323,
+          "rotation_deg": 31.182496167058467,
+          "prefix_rmse_mm": 6.791085290004112
+        }
+      }
+    },
+    {
+      "id": "000011",
+      "object": "mustard",
+      "number": "011",
+      "forecast": "assets/videos/mustard-011-forecast.mp4",
+      "poster": "assets/posters/mustard-011-forecast.webp",
+      "thumb": "assets/posters/mustard-011-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 69.98161831474872,
+          "center_mm": 69.81546361272356,
+          "rotation_deg": 10.294462264282322,
+          "prefix_rmse_mm": 1.280264514605582
+        },
+        "isotropic": {
+          "add_mm": 23.31703647477221,
+          "center_mm": 20.754209384656875,
+          "rotation_deg": 22.741722072551365,
+          "prefix_rmse_mm": 3.8002981840945886
+        },
+        "joint": {
+          "add_mm": 29.397081381865064,
+          "center_mm": 28.855974440966758,
+          "rotation_deg": 10.754766379747394,
+          "prefix_rmse_mm": 2.894889693424804
+        },
+        "retain": {
+          "add_mm": 66.93853308869551,
+          "center_mm": 66.61561397074799,
+          "rotation_deg": 14.926896864586064,
+          "prefix_rmse_mm": 5.80691021233888
+        }
+      }
+    },
+    {
+      "id": "000012",
+      "object": "cleanser",
+      "number": "012",
+      "forecast": "assets/videos/cleanser-012-forecast.mp4",
+      "poster": "assets/posters/cleanser-012-forecast.webp",
+      "thumb": "assets/posters/cleanser-012-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 104.84864574349021,
+          "center_mm": 103.7258572821724,
+          "rotation_deg": 72.02853348546039,
+          "prefix_rmse_mm": 2.208136235360504
+        },
+        "isotropic": {
+          "add_mm": 24.902178748976205,
+          "center_mm": 24.162634886471135,
+          "rotation_deg": 13.63686027044565,
+          "prefix_rmse_mm": 2.6352449945416083
+        },
+        "joint": {
+          "add_mm": 74.5368989222674,
+          "center_mm": 71.70263578155202,
+          "rotation_deg": 50.737314584986585,
+          "prefix_rmse_mm": 2.4950164968487947
+        },
+        "retain": {
+          "add_mm": 61.970466349756094,
+          "center_mm": 60.5089020356608,
+          "rotation_deg": 17.03771434524579,
+          "prefix_rmse_mm": 4.786009978805902
+        }
+      }
+    },
+    {
+      "id": "000016",
+      "object": "mustard",
+      "number": "016",
+      "forecast": "assets/videos/mustard-016-forecast.mp4",
+      "poster": "assets/posters/mustard-016-forecast.webp",
+      "thumb": "assets/posters/mustard-016-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 74.60209417268356,
+          "center_mm": 69.55374627086135,
+          "rotation_deg": 62.0682073153291,
+          "prefix_rmse_mm": 1.3030010737906705
+        },
+        "isotropic": {
+          "add_mm": 34.41864288591596,
+          "center_mm": 30.067620491246906,
+          "rotation_deg": 37.21712694911845,
+          "prefix_rmse_mm": 3.7404933926730495
+        },
+        "joint": {
+          "add_mm": 86.16539296647076,
+          "center_mm": 81.95976464154299,
+          "rotation_deg": 67.13114658491604,
+          "prefix_rmse_mm": 2.711725343225572
+        },
+        "retain": {
+          "add_mm": 63.50666880661776,
+          "center_mm": 62.13005270580065,
+          "rotation_deg": 28.387277553592053,
+          "prefix_rmse_mm": 5.627057111283003
+        }
+      }
+    },
+    {
+      "id": "000017",
+      "object": "cleanser",
+      "number": "017",
+      "forecast": "assets/videos/cleanser-017-forecast.mp4",
+      "poster": "assets/posters/cleanser-017-forecast.webp",
+      "thumb": "assets/posters/cleanser-017-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 46.53346082150427,
+          "center_mm": 37.61213064125086,
+          "rotation_deg": 48.7307217360742,
+          "prefix_rmse_mm": 4.02662260813984
+        },
+        "isotropic": {
+          "add_mm": 23.35431138000517,
+          "center_mm": 21.45521353467009,
+          "rotation_deg": 16.690613767712563,
+          "prefix_rmse_mm": 5.578216925967011
+        },
+        "joint": {
+          "add_mm": 59.944897057010216,
+          "center_mm": 59.05261476900595,
+          "rotation_deg": 17.53680497548049,
+          "prefix_rmse_mm": 4.349003151376916
+        },
+        "retain": {
+          "add_mm": 53.53696736002467,
+          "center_mm": 53.29374510415513,
+          "rotation_deg": 10.164049131850753,
+          "prefix_rmse_mm": 6.2583787223907335
+        }
+      }
+    },
+    {
+      "id": "000021",
+      "object": "mustard",
+      "number": "021",
+      "forecast": "assets/videos/mustard-021-forecast.mp4",
+      "poster": "assets/posters/mustard-021-forecast.webp",
+      "thumb": "assets/posters/mustard-021-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 202.80121725751783,
+          "center_mm": 201.19129390681863,
+          "rotation_deg": 76.69404190940334,
+          "prefix_rmse_mm": 4.993466598806679
+        },
+        "isotropic": {
+          "add_mm": 173.29792675243567,
+          "center_mm": 171.35852970583633,
+          "rotation_deg": 77.10837665705556,
+          "prefix_rmse_mm": 5.365733800612444
+        },
+        "joint": {
+          "add_mm": 223.24180665730518,
+          "center_mm": 221.75188933038072,
+          "rotation_deg": 75.2815623416998,
+          "prefix_rmse_mm": 5.23794705955988
+        },
+        "retain": {
+          "add_mm": 73.73126168775241,
+          "center_mm": 69.65388652922364,
+          "rotation_deg": 51.34807989592226,
+          "prefix_rmse_mm": 10.20087310473641
+        }
+      },
+      "tracking": "assets/videos/mustard-021-tracking.mp4",
+      "trackingPoster": "assets/posters/mustard-021-tracking.webp",
+      "trackingError2": 115.71541654718787,
+      "trackingError10": 20.106835072530618
+    },
+    {
+      "id": "000022",
+      "object": "cleanser",
+      "number": "022",
+      "forecast": "assets/videos/cleanser-022-forecast.mp4",
+      "poster": "assets/posters/cleanser-022-forecast.webp",
+      "thumb": "assets/posters/cleanser-022-thumb.webp",
+      "metrics": {
+        "full_joint": {
+          "add_mm": 46.304941807142264,
+          "center_mm": 30.300890067703133,
+          "rotation_deg": 51.019627474388635,
+          "prefix_rmse_mm": 10.533263949056877
+        },
+        "isotropic": {
+          "add_mm": 113.31595984819326,
+          "center_mm": 103.93782258102411,
+          "rotation_deg": 87.32126277548609,
+          "prefix_rmse_mm": 15.63146475315904
+        },
+        "joint": {
+          "add_mm": 124.32377363716603,
+          "center_mm": 116.85428973325942,
+          "rotation_deg": 73.46616785192873,
+          "prefix_rmse_mm": 13.159701645222304
+        },
+        "retain": {
+          "add_mm": 66.05691043915354,
+          "center_mm": 46.70381249054041,
+          "rotation_deg": 46.206765484652365,
+          "prefix_rmse_mm": 17.370063572665334
+        }
+      },
+      "tracking": "assets/videos/cleanser-022-tracking.mp4",
+      "trackingPoster": "assets/posters/cleanser-022-tracking.webp",
+      "trackingError2": 110.2195441790202,
+      "trackingError10": 21.12671374079989
+    }
+  ],
+  "provenance": {
+    "dataset": "EV-RealPhys",
+    "paper": "https://arxiv.org/abs/2309.15703",
+    "source": "https://keeper.mpdl.mpg.de/d/5ec213b655b44e40a382/",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "observer": "https://github.com/NVlabs/FoundationPose",
+    "observerCommit": "a1b694b83e633c2cb6115b9063d940a687759392",
+    "scope": "Previously used diagnostic recordings, not independent new-object/action confirmation. No new winning method or SOTA claim."
+  }
+}

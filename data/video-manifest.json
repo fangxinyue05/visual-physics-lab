@@ -1,0 +1,62 @@
+[
+  {
+    "file": "assets\\videos\\cleanser-002-forecast.mp4",
+    "bytes": 665432,
+    "sha256": "f5c470f0a1be9c5969467d5d1a9d26fd34fe2be7ebcdb4a39e8ccd7e40348a6f"
+  },
+  {
+    "file": "assets\\videos\\cleanser-007-forecast.mp4",
+    "bytes": 727733,
+    "sha256": "66099712b9d25f89d31cbf723f8d2daf74e9cc6406659d48c5981ebdc7936925"
+  },
+  {
+    "file": "assets\\videos\\cleanser-012-forecast.mp4",
+    "bytes": 695692,
+    "sha256": "b5ac62fbcfda0cb96c39511187050e8fb4658f9489a6d59161683e3959c77c2b"
+  },
+  {
+    "file": "assets\\videos\\cleanser-017-forecast.mp4",
+    "bytes": 694038,
+    "sha256": "3af36d364434694803837bba8d6cf12e5e6c1c2c12a9e5c155ba791622f5cf1e"
+  },
+  {
+    "file": "assets\\videos\\cleanser-022-forecast.mp4",
+    "bytes": 740105,
+    "sha256": "8725e56258464ab8927ee15fdd8a6e675ec381327e3a5b08922ec5808c7b79df"
+  },
+  {
+    "file": "assets\\videos\\cleanser-022-tracking.mp4",
+    "bytes": 2330837,
+    "sha256": "719a1f1fa44d4416badacca95c417419d4fe9562fac427a5f99a0aeaad5c51a3"
+  },
+  {
+    "file": "assets\\videos\\mustard-001-forecast.mp4",
+    "bytes": 719120,
+    "sha256": "36452b1578334209901bc4b32b9bb42827731205b62bfc15238609b6f41ccd7e"
+  },
+  {
+    "file": "assets\\videos\\mustard-006-forecast.mp4",
+    "bytes": 691747,
+    "sha256": "acb47197bf5c6528854e672f75433cab43fdbabb14abd8fd6891a431f7bfe134"
+  },
+  {
+    "file": "assets\\videos\\mustard-011-forecast.mp4",
+    "bytes": 665248,
+    "sha256": "2a54dd3e78c227a0d33292e39154022a4672ca614edf08d5fede1117c47c69c5"
+  },
+  {
+    "file": "assets\\videos\\mustard-016-forecast.mp4",
+    "bytes": 689717,
+    "sha256": "c286c21b8ed2dd9d0f97085de6f24bb5643fa380adac03ca8e8ecf15dbcdbcc9"
+  },
+  {
+    "file": "assets\\videos\\mustard-021-forecast.mp4",
+    "bytes": 763485,
+    "sha256": "757a1055a6c1ac61ed9b429038dc8e51a2f186da7ad659d29875f0c042bd679b"
+  },
+  {
+    "file": "assets\\videos\\mustard-021-tracking.mp4",
+    "bytes": 2334471,
+    "sha256": "ef40b8e9ec5dee4ab38e4c0812df1822d2776252d37680b6d3000ac2b688cd8d"
+  }
+]
