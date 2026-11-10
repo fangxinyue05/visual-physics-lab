@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f2">
   <meta name="description" content="真实 RGB-D 录像、清晰的跟踪对照与三维物理预测。浏览全部十段实验，查看相同输入、相同求解预算下的真实结果。">
-  <meta name="experiment-version" content="2026-11-07-gallery-v1">
+  <meta name="experiment-version" content="2026-11-10-pusht">
   <meta property="og:title" content="Visual Physics — 先看清，再理解物理">
   <meta property="og:description" content="真实录像与三维预测的可视化实验室。成功与失败，一起呈现。">
   <meta property="og:type" content="website">
@@ -15,10 +15,11 @@
   <script src="app.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#tracking" data-i18n="skip">跳到实验视频</a>
+  <a class="skip-link" href="#pusht" data-i18n="skip">跳到实验视频</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Visual Physics home"><span class="brand-mark" aria-hidden="true">v<span>p</span></span><span>VISUAL PHYSICS<span class="brand-sub" data-i18n="brandSub">实验影像 · 2026</span></span></a>
     <nav aria-label="Main navigation">
+      <a href="#pusht" data-i18n="navPush">看推物</a>
       <a href="#tracking" data-i18n="navTracking">看跟踪</a>
       <a href="#forecast" data-i18n="navForecast">看预测</a>
       <a href="#results" data-i18n="navResults">看结果</a>
@@ -28,8 +29,49 @@
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> A VISUAL EXPERIMENT NOTEBOOK</p><h1 data-i18n-html="heroTitle">先看清运动，<br>再理解<span class="serif-accent">物理。</span></h1></div>
-      <div class="hero-aside"><p class="hero-description" data-i18n="heroDescription">从真实录像出发，拆开跟踪误差与物理预测。模型看到了什么，预测了什么，哪里仍然失败——让画面和结果自己说话。</p><a class="text-link" href="#tracking"><span data-i18n="heroLink">从一段对照视频开始</span> <span aria-hidden="true">↓</span></a><span class="status-label" data-i18n="researchStatus">研究诊断 / 包含负面结果</span></div>
+      <div class="hero-aside"><p class="hero-description" data-i18n="heroDescription">从真实录像出发，拆开跟踪误差与物理预测。模型看到了什么，预测了什么，哪里仍然失败——让画面和结果自己说话。</p><a class="text-link" href="#pusht"><span data-i18n="heroLink">看最新推物对照</span> <span aria-hidden="true">↓</span></a><span class="status-label" data-i18n="researchStatus">研究诊断 / 包含负面结果</span></div>
       <div class="experiment-facts"><div><strong>10<span data-i18n="unitClips">段</span></strong><span data-i18n="factReal">真实 RGB-D 录像</span></div><div><strong>15<span data-i18n="unitFrames">帧</span></strong><span data-i18n="factInput">预测模型可见的前缀</span></div><div><strong>1<span data-i18n="unitSeconds">秒</span></strong><span data-i18n="factFuture">留给评估的未来</span></div><div><strong>3<span data-i18n="unitSeeds">组</span></strong><span data-i18n="factSeeds">每种拟合的随机种子</span></div></div>
+    </section>
+
+    <section id="pusht" class="shell story-section push-section" aria-labelledby="pusht-title">
+      <div class="section-top">
+        <div><p class="eyebrow"><span class="live-dot"></span> REAL PUSH-T / NOV 2026</p><h2 id="pusht-title" data-i18n="pushTitle">改了模型，预测变好了吗？</h2></div>
+      </div>
+      <p class="section-description" data-i18n="pushIntro">同一个 T 块、同一条计划动作。并排看原录像、保留原模型、完整联合拟合和按方向约束的修复。</p>
+      <div class="push-layout">
+        <div class="video-card">
+          <div class="film-topline"><span class="video-kicker"><span class="video-dot"></span><span data-i18n="pushKicker">真实录像 · 首帧与 0.8 秒计划指令</span></span><span class="film-id">1080P / 3 CASES</span></div>
+          <div class="film-frame push-frame">
+            <video id="pusht-video" controls playsinline preload="metadata" poster="assets/posters/real-pusht-comparison.webp" width="1920" height="1080" aria-labelledby="pusht-title">
+              <source src="assets/videos/real-pusht-comparison.mp4" type="video/mp4">
+              <p data-i18n="videoFallback">浏览器无法播放，请直接下载视频。</p>
+            </video>
+          </div>
+          <div class="video-tools push-tools">
+            <div class="push-chapters" id="pusht-chapters" role="group" aria-label="Video chapters">
+              <button type="button" data-second="0"><span>0:00</span> <span data-i18n="pushChapter1">差异最小</span></button>
+              <button type="button" data-second="4.767"><span>0:04.8</span> <span data-i18n="pushChapter2">新方法最大回退</span></button>
+              <button type="button" data-second="9.533"><span>0:09.5</span> <span data-i18n="pushChapter3">联合拟合最大回退</span></button>
+            </div>
+            <a class="download-link" href="assets/videos/real-pusht-comparison.mp4" download><span data-i18n="downloadVideo">下载视频</span> ↗</a>
+          </div>
+        </div>
+        <aside class="push-results" aria-labelledby="pusht-results-title">
+          <p class="eyebrow">HELD-OUT RECORDINGS</p>
+          <h3 id="pusht-results-title" data-i18n="pushResultTitle">保留原模型的误差最低</h3>
+          <p data-i18n="pushScope">36 个封存窗口中，26 个可评分，来自 6 段未参与以往拟合或预测的录像。</p>
+          <table class="push-table">
+            <thead><tr><th scope="col" data-i18n="pushMethod">方法</th><th scope="col" data-i18n="pushError">误差（px）</th><th scope="col" data-i18n="pushEdits">修改</th><th scope="col" data-i18n="pushWorst">最坏回退（px）</th></tr></thead>
+            <tbody>
+              <tr><th scope="row" data-i18n="pushRetain">保留原模型</th><td><strong>1.107</strong></td><td>0/26</td><td>0</td></tr>
+              <tr><th scope="row" data-i18n="pushJoint">完整联合拟合</th><td>1.232</td><td>11/26</td><td>+2.330</td></tr>
+              <tr><th scope="row" data-i18n="pushDirectional">方向约束</th><td>1.111</td><td>2/26</td><td>+0.117</td></tr>
+            </tbody>
+          </table>
+          <p class="push-note" data-i18n="pushNote">更新方法共享 4 段支持录像和 240 个候选。主种子里，方向约束与只按运动幅度的对照作出同样的决定。</p>
+        </aside>
+      </div>
+      <p class="push-credit"><span data-i18n="pushLegend">青线是 RGB 轮廓参考，金线是冻结预测，白线是计划的推杆路径。</span> <a href="https://diffusion-policy.cs.columbia.edu/data/training/" target="_blank" rel="noopener" data-i18n="pushSource">Real Push-T 数据 · Chi 等 ↗</a></p>
     </section>
 
     <section id="tracking" class="shell story-section">
@@ -62,9 +104,9 @@
       <details class="figure-detail"><summary><span data-i18n="figureTitle">展开：全部十段录像的定量图</span><span aria-hidden="true">＋</span></summary><div class="figure-content"><a href="assets/figures/future_prediction.svg" target="_blank" rel="noopener" aria-label="Open full-size quantitative figure"><img src="assets/figures/future_prediction.svg" width="4320" height="2130" loading="lazy" alt="Future whole-body ADD of four ordinary models on all ten real recordings"></a><p data-i18n="figureNote">点为每段录像，短横线为均值。所有录像点均保留；不把优化种子当作额外录像，不声明统计显著性。</p><div class="figure-downloads"><a href="assets/figures/future_prediction.pdf" download>PDF ↗</a><a href="assets/figures/future_prediction.svg" download>SVG ↗</a><a href="assets/figures/future_prediction.png" download>600 dpi PNG ↗</a></div></div></details>
     </section>
 
-    <section id="protocol" class="protocol-section"><div class="shell protocol-grid"><div><p class="eyebrow">THE EXPERIMENT, IN CONTEXT</p><h2 data-i18n="protocolTitle">画面清楚，<br>结论也要清楚。</h2><p class="protocol-intro" data-i18n="protocolIntro">这些实验帮助定位问题。它们尚未构成新机制胜出、SOTA 或独立新录像确认。</p><a class="text-link" href="data/experiments.json" download><span data-i18n="downloadProtocol">实验设定与数据</span> ↗</a></div><div class="protocol-list"><div><span>01</span><div><h3 data-i18n="protocolInputTitle">看到了什么</h3><p data-i18n="protocolInput">真实 RGB-D 前 15 帧、视觉 CAD 与相机标定。官方 FoundationPose 估计位姿；所有物理模型使用同一份观察。</p></div></div><div><span>02</span><div><h3 data-i18n="protocolMetricTitle">如何评估</h3><p data-i18n="protocolMetric">用独立运动捕捉作参考，在 256 个固定表面点上计算整物体误差。未来画面仅用于展示和评估。</p></div></div><div><span>03</span><div><h3 data-i18n="protocolLimitTitle">保留哪些边界</h3><p data-i18n="protocolLimit">十段录像此前已用于诊断。33 变量拟合包含质心、惯量和接触校准，但不保证全局最优，也不代表所有已发表物理方法的上限。</p></div></div><div><span>04</span><div><h3 data-i18n="protocolIntegrityTitle">影像怎么处理</h3><p data-i18n="protocolIntegrity">原始 RGB 画面，共同跟随裁剪、CAD 投影描边和文字说明。播放放慢 3 倍并含停帧；没有合成未来画面。</p></div></div></div></div></section>
+    <section id="protocol" class="protocol-section"><div class="shell protocol-grid"><div><p class="eyebrow">THE EXPERIMENT, IN CONTEXT</p><h2 data-i18n="protocolTitle">画面清楚，<br>结论也要清楚。</h2><p class="protocol-intro" data-i18n="protocolIntro">以下设定对应瓶类 RGB-D 实验。上方推物实验使用单独的录像留出和像素误差。</p><a class="text-link" href="data/experiments.json" download><span data-i18n="downloadProtocol">实验设定与数据</span> ↗</a></div><div class="protocol-list"><div><span>01</span><div><h3 data-i18n="protocolInputTitle">看到了什么</h3><p data-i18n="protocolInput">真实 RGB-D 前 15 帧、视觉 CAD 与相机标定。官方 FoundationPose 估计位姿；所有物理模型使用同一份观察。</p></div></div><div><span>02</span><div><h3 data-i18n="protocolMetricTitle">如何评估</h3><p data-i18n="protocolMetric">用独立运动捕捉作参考，在 256 个固定表面点上计算整物体误差。未来画面仅用于展示和评估。</p></div></div><div><span>03</span><div><h3 data-i18n="protocolLimitTitle">保留哪些边界</h3><p data-i18n="protocolLimit">十段录像此前已用于诊断。33 变量拟合包含质心、惯量和接触校准，但不保证全局最优，也不代表所有已发表物理方法的上限。</p></div></div><div><span>04</span><div><h3 data-i18n="protocolIntegrityTitle">影像怎么处理</h3><p data-i18n="protocolIntegrity">原始 RGB 画面，共同跟随裁剪、CAD 投影描边和文字说明。播放放慢 3 倍并含停帧；没有合成未来画面。</p></div></div></div></div></section>
   </main>
-  <footer class="shell site-footer"><div><a class="footer-brand" href="#top">VISUAL PHYSICS <span>↗</span></a><p data-i18n="footerCredit">视频改编自 EV-RealPhys · Kandukuri 等 · CC BY-SA 4.0</p></div><div class="footer-links"><a href="https://arxiv.org/abs/2309.15703" target="_blank" rel="noopener" data-i18n="sourcePaper">数据论文 ↗</a><a href="https://keeper.mpdl.mpg.de/d/5ec213b655b44e40a382/" target="_blank" rel="noopener" data-i18n="sourceData">原始数据 ↗</a><a href="https://github.com/NVlabs/FoundationPose" target="_blank" rel="noopener">FoundationPose ↗</a><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" data-i18n="license">媒体许可 ↗</a></div><p class="footer-bottom"><span>EXPERIMENT NOTEBOOK / 2026.11.07</span><span data-i18n="footerNote">展示真实结果，也保留未解决的问题。</span></p></footer>
+  <footer class="shell site-footer"><div><a class="footer-brand" href="#top">VISUAL PHYSICS <span>↗</span></a><p data-i18n="footerCredit">瓶类视频改编自 EV-RealPhys · Kandukuri 等 · CC BY-SA 4.0</p></div><div class="footer-links"><a href="https://arxiv.org/abs/2309.15703" target="_blank" rel="noopener" data-i18n="sourcePaper">数据论文 ↗</a><a href="https://keeper.mpdl.mpg.de/d/5ec213b655b44e40a382/" target="_blank" rel="noopener" data-i18n="sourceData">原始数据 ↗</a><a href="https://github.com/NVlabs/FoundationPose" target="_blank" rel="noopener">FoundationPose ↗</a><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" data-i18n="license">媒体许可 ↗</a></div><p class="footer-bottom"><span>EXPERIMENT NOTEBOOK / 2026.11.10</span><span data-i18n="footerNote">展示真实结果，也保留未解决的问题。</span></p></footer>
   <noscript><p class="noscript-note">本页的视频和总体结果可直接查看；启用 JavaScript 后可筛选全部录像和切换语言。</p></noscript>
 </body>
 </html>

@@ -58,5 +58,10 @@
     "file": "assets\\videos\\mustard-021-tracking.mp4",
     "bytes": 2334471,
     "sha256": "ef40b8e9ec5dee4ab38e4c0812df1822d2776252d37680b6d3000ac2b688cd8d"
+  },
+  {
+    "file": "assets/videos/real-pusht-comparison.mp4",
+    "bytes": 3601824,
+    "sha256": "a449efbf4cc1147ba80f96581a4e14f4bb91d1f828348418b785f9af092634ce"
   }
 ]

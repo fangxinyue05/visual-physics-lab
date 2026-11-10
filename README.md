@@ -6,7 +6,11 @@ A bilingual, static research gallery of real RGB-D tracking and 3D physical pred
 
 The gallery includes all ten previously used EV-RealPhys bottle recordings, ten frozen future-prediction videos and two official FoundationPose tracking comparisons. Visitors can inspect a single panel, filter by object, switch languages and compare overall or per-recording results. It runs without an application backend or external font service.
 
-## Scientific scope
+## Real Push-T comparison
+
+The [Push-T section](https://fangxinyue05.github.io/visual-physics-lab/#pusht) shows a 1080p comparison on 26 scoreable windows in six held-out recordings. The predictor receives the initial RGB pose and a planned command sequence. Update methods share four support clips and the same 240-model bank. The retained model has the lowest mean error. The video uses brief RGB excerpts from the [Diffusion Policy Real Push-T release](https://diffusion-policy.cs.columbia.edu/data/training/) (Chi et al.) with common crops, slow playback and labeled prediction outlines.
+
+## EV-RealPhys scientific scope
 
 - These are diagnostics on previously used recordings, not an independent new-object/action confirmation.
 - Tracking comparisons use the same official FoundationPose model with 2 or 10 tracking iterations. The latter uses additional computation; it is not a new equal-budget tracking method.
@@ -21,7 +25,7 @@ Numerical data: [per recording](data/per-recording-results.csv), [object means](
 
 Original RGB frames are shown with a common follow crop, labelled CAD projection envelopes and text. Playback is 3× slower with frame holds. No future scene frames are synthesized. Future images are displayed to viewers, never passed to the frozen physical predictor. The two highlighted tracking clips were the largest original tracking errors; all ten physical forecast recordings are provided, including negative cases.
 
-Media are adapted from **EV-RealPhys**, accompanying Kandukuri, Strecke and Stueckler, *Physics-Based Rigid Body Object Tracking and Friction Filtering From RGB-D Videos*.
+The bottle videos are adapted from **EV-RealPhys**, accompanying Kandukuri, Strecke and Stueckler, *Physics-Based Rigid Body Object Tracking and Friction Filtering From RGB-D Videos*.
 
 - [Original paper](https://arxiv.org/abs/2309.15703)
 - [Original data](https://keeper.mpdl.mpg.de/d/5ec213b655b44e40a382/)
